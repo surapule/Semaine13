@@ -1,0 +1,25 @@
+<!DOCTYPE html>                  
+<html lang="fr">
+<head>        
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+	<div ng-app="app">
+    <div ng-controller="appCtrl" class="carre">
+        <input ng-model="valeur" placeholder="valeur" class="recherche"/>
+        <button ng-click="addDepense()">Ajouter dépense</button>
+        <ul>
+            <li ng-repeat="depense in depenses">
+                {{ depense.valeur }} <span ng-click="rmDepense($index)">×</span>
+            </li>
+        </ul>
+        <strong>Total des dépenses : {{ total }}</strong>
+    </div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
+	<script type="text/javascript" src ='script.js'></script>
+</body>
+</html>

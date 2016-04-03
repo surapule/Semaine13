@@ -1,0 +1,30 @@
+body{
+	background-color: grey;
+}
+.carre{
+	border: 2px solid black;
+	width:50%;
+	position: relative;
+	margin: auto;
+}
+
+.carre button{
+	margin-bottom: 10px;
+	margin-left: 50px;
+	width: 80%;
+	border-radius: 50px;
+
+}
+
+.recherche{
+	margin-left: 10px;
+}
+#search, #research{
+	border-radius: 50px;
+}
+input {
+    width: 4em;
+}
+span {
+    cursor: pointer;
+}
